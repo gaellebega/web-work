@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Individual Asiignment #2 ISHAMI GAELLE BEGA REG NO:224011161</h2>
+    <script>
+    <h2>Array of 20 Numbers</h2>
+let num=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,1,5,16,17,18,19,20];
+ function calculateSum(arr){
+let sum=0;
+for(let i=0; i<arr.length; i++){
+  sum += arr[i];
+    }
+    return sum;
+  }
+console.log(calculateSum(num));
+
+<h2>Function to find the large number in array of 20 numbers</h2>
+function findLarge(arr){
+let largest=arr[0];
+for(let i=1;i<arr.length;i++){
+  if(arr[i]>largest){
+    largest=arr[i];
+  }
+}
+return largest;
+}
+console.log(findLarge(num));
+
+<h2>sort an array of 20 numbers</h2>
+
+function sortNumbers(arr){
+return arr.sort((a,b)=> a-b);
+}
+console.log(sortNumbers(num));
+
+<h2>Function to reverse ana array of 20 numbers</h2>
+
+</script>
+</body>
+</html>
