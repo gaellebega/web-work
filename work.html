@@ -6,7 +6,8 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Individual Asiignment #2 ISHAMI GAELLE BEGA REG NO:224011161</h2>
+  <h1>Individual Asiignment #2 ISHAMI GAELLE BEGA<br>
+     REG NO:224011161</h2>
     <script>
     <h2>Array of 20 Numbers</h2>
 let num=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,1,5,16,17,18,19,20];
@@ -38,7 +39,225 @@ return arr.sort((a,b)=> a-b);
 }
 console.log(sortNumbers(num));
 
-<h2>Function to reverse ana array of 20 numbers</h2>
+<h2>Function to reverse an array of 20 numbers</h2>
+function reverseNumbers(arr){
+return arr.revers();
+}
+console.log(reverseNumbers(num));
+<h2>function to return only the even numbers</h2>
+
+function getEvenNumbers(arr){
+  let evens=[];
+  for(let i=0;i<arr.length;i++){
+if(arr[i]%2==0){
+}
+evens.push(arr[i]);
+  }
+  return evens;
+}
+console.log(getEvenNumbers(num));
+
+function getOddNumbers(arr){
+return arr.filter(num=>num%2 !== 0)
+}
+console.log(rerurnEvenNumbers(numbers));
+
+<h2>function to get the average of 20 numbers</h2>
+function getAverage(arr){
+  let sum=arr.reduce((total, num)=>total+num,0);
+  return sum/arr.length;
+
+}
+console.log(getAverage(numbers));
+
+<h2>function to remove the duplicates</h2>
+function removeDUplicates(arr){
+  return[...new Sret(arr)];
+}
+console.log(removeDUplicates(num));
+<h2>function to calculate the middle of the array of the numbers</h2>
+function getMedian(arr) {
+  let sorted = arr.sort((a, b) => a - b);
+  let mid1 = sorted[9];   
+  let mid2 = sorted[10];  
+  return (mid1 + mid2) / 2;
+}
+
+<h2>function to multipy the numbers by 2</h2>
+function multiplyByTwo(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(arr[i] * 2);
+  }
+
+  return result;
+}
+console.log(multiplyByTwo(num))
+let names = [
+ 
+  "Ange", "Elie", "Uwase", "Mugisha", "Mugabo",
+  "Lucie", "Angello", "Mukobwa", "Muhungu", "Aline",
+  "Eric", "Alice", "David", "Evelyne", "Jean",
+  "Claire", "Patrick", "Fabrice", "Rachel", "Tina"
+];
+
+
+<h2>24. Write a function to remove a property from an existing object</h2>
+
+function removeProperty(obj, key) {
+  delete obj[key];
+  return obj;
+}
+removeProperty(person2, "country");
+console.log(person2);
+</script>
+
+<h2>25. Write a function to list all properties and values of a JavaScript object</h2>
+<script>
+function listProperties(obj) {
+  for (let key in obj) {
+    console.log(`${key}: ${obj[key]}`);
+  }
+}
+listProperties(person3);
+</script>
+
+<h2>26. Write a function to merge two objects into one</h2>
+<script>
+function mergeObjects(obj1, obj2) {
+  return { ...obj1, ...obj2 };
+}
+let mergedPerson = mergeObjects(person1, person4);
+console.log(mergedPerson);
+</script>
+
+<h2>27. Write a function to check if a property exists in an object</h2>
+<script>
+function propertyExists(obj, key) {
+  return obj.hasOwnProperty(key);
+}
+console.log(propertyExists(person5, "age"));  // true
+console.log(propertyExists(person5, "salary")); // false
+</script>
+
+<h2>28. Write a function to clone an object without referencing the original one</h2>
+<script>
+function cloneObject(obj) {
+  return { ...obj };
+}
+let clone = cloneObject(person1);
+console.log(clone);
+<h2>29. Write a function that loops through an array of objects and prints a specific property of each object</h2>
+
+function printProperty(arr, prop) {
+  arr.forEach(obj => console.log(obj[prop]));
+}
+printProperty(people, "name");
+
+
+<h2>30. Write a function that updates a specific property of an object based on user input</h2>
+
+function updateProperty(obj, key, newValue) {
+  if (obj.hasOwnProperty(key)) {
+    obj[key] = newValue;
+  }
+  return obj;
+}
+updateProperty(person3, "occupation", "Senior Teacher");
+console.log(person3);
+<h2>21. Create a JavaScript object that represents a person (with properties: name, age, and occupation)</h2>
+
+let person1 = { name: "Alice", age: 25, occupation: "Designer" };
+let person2 = { name: "Bob", age: 30, occupation: "Developer" };
+let person3 = { name: "Charlie", age: 22, occupation: "Teacher" };
+let person4 = { name: "David", age: 28, occupation: "Engineer" };
+let person5 = { name: "Eva", age: 27, occupation: "Doctor" };
+
+let people = [person1, person2, person3, person4, person5];
+console.log(people);
+
+
+<h2>22. Write a function that takes a person object and returns a formatted string with their information</h2>
+
+function formatPerson(person) {
+  return `Name: ${person.name}, Age: ${person.age}, Occupation: ${person.occupation}`;
+}
+console.log(formatPerson(person1));
+
+<h2>23. Write a function to add a new property to an existing object</h2>
+
+function addProperty(obj, key, value) {
+  obj[key] = value;
+  return obj;
+}
+addProperty(person2, "country", "Rwanda");
+console.log(person2);
+
+
+<h2>24. Write a function to remove a property from an existing object</h2>
+
+function removeProperty(obj, key) {
+  delete obj[key];
+  return obj;
+}
+removeProperty(person2, "country");
+console.log(person2);
+
+
+<h2>25. Write a function to list all properties and values of a JavaScript object</h2>
+
+function listProperties(obj) {
+  for (let key in obj) {
+    console.log(`${key}: ${obj[key]}`);
+  }
+}
+listProperties(person3);
+
+
+<h2>26. Write a function to merge two objects into one</h2>
+
+function mergeObjects(obj1, obj2) {
+  return { ...obj1, ...obj2 };
+}
+let mergedPerson = mergeObjects(person1, person4);
+console.log(mergedPerson);
+
+<h2>27. Write a function to check if a property exists in an object</h2>
+
+function propertyExists(obj, key) {
+  return obj.hasOwnProperty(key);
+}
+console.log(propertyExists(person5, "age"));  // true
+console.log(propertyExists(person5, "salary")); // false
+
+
+<h2>28. Write a function to clone an object without referencing the original one</h2>
+
+function cloneObject(obj) {
+  return { ...obj };
+}
+let clone = cloneObject(person1);
+console.log(clone);
+
+
+<h2>29. Write a function that loops through an array of objects and prints a specific property of each object</h2>
+
+function printProperty(arr, prop) {
+  arr.forEach(obj => console.log(obj[prop]));
+}
+printProperty(people, "name");
+
+
+<h2>30. Write a function that updates a specific property of an object based on user input</h2>
+
+function updateProperty(obj, key, newValue) {
+  if (obj.hasOwnProperty(key)) {
+    obj[key] = newValue;
+  }
+  return obj;
+}
+updateProperty(person3, "occupation", "Senior Teacher");
+console.log(person3);
 
 </script>
 </body>
